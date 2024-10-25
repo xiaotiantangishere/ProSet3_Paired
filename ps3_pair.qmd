@@ -1,6 +1,6 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Xiaotian Tang"
+author: "Xiaotian Tang, Zheng Cui"
 format: 
   pdf:
     include-in-header: 
@@ -27,13 +27,14 @@ np.random.seed(42)
 data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
 def preview_data(df):
+
   hist = alt.Chart(df).mark_bar().encode(
     alt.X('Random Numbers:Q',bin = alt.Bin(maxbins=10)),
     alt.Y('count()')
   )
 
-  list = [df.head(), hist]
+  list = [df.head(),df.describe(),hist]
   return list
-
+  
 preview_data(data)
 ```
