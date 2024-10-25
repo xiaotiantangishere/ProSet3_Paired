@@ -1,6 +1,6 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Zheng Cui"
+author: "Xiaotian Tang, Zheng Cui"
 format: 
   pdf:
     include-in-header: 
